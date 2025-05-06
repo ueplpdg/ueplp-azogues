@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa La Providencia - Azogues</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo-link">
+            <img src="logo-placeholder.png" alt="Logo La Providencia" class="logo">
+        </a>
+        <nav>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#reseñas">Reseñas</a>
+            <a href="#oferta-academica">Oferta Académica</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#info">Información</a>
+            <a href="#" onclick="mostrarVista('registro')">Registro</a>
+            <a href="#" onclick="mostrarVista('galeria')">Galería</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="WhatsApp Image 2025-04-17 at 23.20.36.jpeg" alt="Banner de La Providencia" class="banner-img">
+        <div class="banner-texto">
+            <h2>Transformamos Vidas con Educación y Valores</h2>
+            <p>Únete a nuestra comunidad educativa y descubre un mundo de oportunidades</p>
+            <a href="#registro" onclick="mostrarVista('registro')" class="banner-btn">Regístrate Ahora</a>
+        </div>
+    </div>
+    <main id="principal">
+        <section id="nosotros">
+            <div class="card">
+                <h2>Sobre Nosotros</h2>
+                <p>La Unidad Educativa Particular La Providencia, con más de 130 años de trayectoria en Azogues, Ecuador, es un pilar de educación integral basada en valores cristianos. Nos dedicamos a formar estudiantes comprometidos con la excelencia académica, el desarrollo humano y la responsabilidad social.</p>
+                <p>Nuestra misión es cultivar seres humanos libres, responsables y solidarios, preparados para transformar el mundo. Ofrecemos un modelo educativo que combina fe católica, innovación pedagógica y desarrollo emocional, apoyados por un equipo docente altamente capacitado y modernas instalaciones.</p>
+                <p>En La Providencia, cada estudiante es único. A través de programas personalizados, actividades culturales y deportivas, fomentamos el talento y la creatividad, guiados por nuestro lema: <em>"Formamos generaciones con valores para transformar el mundo"</em>.</p>
+            </div>
+        </section>
+        <section id="reseñas">
+            <div class="card reseñas">
+                <h2>Reseñas</h2>
+                <div id="resenas-lista">
+                    <p>"Un lugar donde los valores y la educación van de la mano." - Exalumna</p>
+                    <p>"Mis hijos han crecido felices y bien formados aquí." - Padre de familia</p>
+                    <p>"La mejor institución en Azogues, sin duda." - Docente</p>
+                </div>
+                <form id="formResena" action="javascript:void(0);">
+                    <textarea id="nuevaResena" placeholder="Escribe tu reseña aquí" rows="3" required></textarea>
+                    <button type="submit">Agregar Reseña</button>
+                </form>
+            </div>
+        </section>
+        <section id="oferta-academica">
+            <div class="card">
+                <h2>Oferta Académica</h2>
+                <p>Ofrecemos una educación integral en los siguientes niveles:</p>
+                <ul>
+                    <li><strong>Educación General Básica (EGB):</strong> Desde 1º hasta 10º año, enfocada en competencias fundamentales, valores cristianos y desarrollo integral.</li>
+                    <li><strong>Bachillerato General Unificado (BGU):</strong> Desde 1º hasta 3º año, con preparación para la universidad y el mundo laboral, incluyendo orientación vocacional.</li>
+                </ul>
+                <p><strong>Actividades Extracurriculares:</strong> Ofrecemos talleres de arte, música, deportes (fútbol, voleibol), clubes de ciencia, debates y voluntariado, para complementar la formación integral de nuestros estudiantes.</p>
+            </div>
+        </section>
+        <section id="eventos">
+            <div class="card">
+                <h2>Eventos Próximos</h2>
+                <p>Participa en nuestras actividades comunitarias:</p>
+                <ul>
+                    <li><strong>Feria de Ciencias:</strong> 15 de mayo de 2025 - Una oportunidad para que los estudiantes muestren sus proyectos científicos.</li>
+                    <li><strong>Día de la Familia:</strong> 20 de junio de 2025 - Un día de integración con actividades recreativas para toda la familia.</li>
+                    <li><strong>Concierto Navideño:</strong> 10 de diciembre de 2025 - Celebra con nosotros la magia de la Navidad.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="noticias">
+            <div class="card">
+                <h2>Noticias</h2>
+                <p><strong>Nueva Aula Tecnológica:</strong> Inauguramos un espacio con computadoras y herramientas digitales para fomentar la innovación.</p>
+                <p><strong>Reconocimiento Académico:</strong> Nuestros estudiantes de BGU obtuvieron el primer lugar en el Concurso Provincial de Matemáticas 2025.</p>
+                <p><strong>Campaña Solidaria:</strong> Recolectamos víveres para familias necesitadas de Azogues, demostrando nuestro compromiso social.</p>
+            </div>
+        </section>
+        <section id="info">
+            <div class="card">
+                <h2>Información Adicional</h2>
+                <p><strong>Dirección:</strong> Serrano y Emilio Abad, Azogues, Ecuador</p>
+                <p><strong>Teléfono:</strong> (07) 224-0086</p>
+                <p><strong>Correo:</strong> <a href="mailto:ueducproviazog@yahoo.es">ueducproviazog@yahoo.es</a></p>
+                <p><strong>Redes Sociales:</strong> 
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.78154915482!2d-78.8484494852016!3d-2.739614598022233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b5e5b9c5e5a5b7%3A0x7e1e5e5c5e5a5b7!2sAzogues%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1698851234567!5m2!1ses!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="vista-registro" class="vista" style="display:none;">
+        <section class="card formulario">
+            <h2>Registro</h2>
+            <form action="javascript:void(0);">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="text" placeholder="Curso al que aplica" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <button onclick="cerrarVista()">Volver</button>
+        </section>
+    </div>
+    <div id="vista-galeria" class="vista" style="display:none;">
+        <section class="card galeria">
+            <h2>Galería Estudiantil</h2>
+            <p>Sube tu contenido escolar:</p>
+            <input type="file" id="imagenSubida" accept="image/*">
+            <div id="vistaPrevia"></div>
+            <button onclick="cerrarVista()">Volver</button>
+        </section>
+    </div>
+    <footer>
+        © 2025 Unidad Educativa La Providencia - Azogues | Diseñado por J-A-C Audivisual Studios
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
